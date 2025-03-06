@@ -1,91 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.8.10 on linux)" generated="2025-03-06T14:46:02.934008" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.8.10 on linux)" generated="2025-03-06T14:47:16.054645" rpa="false" schemaversion="5">
 <suite id="s1" name="UsandoLogs" source="/home/thiagofb84jp/vscode/udemy/robot-framework/3 - Estruturas/exemplos-estruturas/UsandoLogs.robot">
 <test id="s1-t1" name="Caso de teste exemplo 01" line="12">
 <kw name="Usando LOG para mensagens">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-03-06T14:46:03.065781" level="INFO">Minha mensagem de LOG</msg>
+<msg time="2025-03-06T14:47:16.201917" level="INFO">Minha mensagem de LOG</msg>
 <arg>Minha mensagem de LOG</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-03-06T14:46:03.065591" elapsed="0.000269"/>
+<status status="PASS" start="2025-03-06T14:47:16.201649" elapsed="0.000374"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-03-06T14:46:03.066195" level="INFO">${VAR} = variável qualquer</msg>
+<msg time="2025-03-06T14:47:16.202478" level="INFO">${VAR} = variável qualquer</msg>
 <var>${VAR}</var>
 <arg>variável qualquer</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-03-06T14:46:03.066033" elapsed="0.000191"/>
+<status status="PASS" start="2025-03-06T14:47:16.202245" elapsed="0.000278"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-03-06T14:46:03.066500" level="INFO">Posso logar uma variável qualquer no meio de um log</msg>
+<msg time="2025-03-06T14:47:16.202939" level="INFO">Posso logar uma variável qualquer no meio de um log</msg>
 <arg>Posso logar uma ${VAR} no meio de um log</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-03-06T14:46:03.066355" elapsed="0.000193"/>
+<status status="PASS" start="2025-03-06T14:47:16.202707" elapsed="0.000295"/>
 </kw>
-<status status="PASS" start="2025-03-06T14:46:03.064701" elapsed="0.001924"/>
+<status status="PASS" start="2025-03-06T14:47:16.200267" elapsed="0.002831"/>
 </kw>
 <kw name="Usando LOG Console">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Posso logar na saída do console</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-06T14:46:03.067065" elapsed="0.000138"/>
+<status status="PASS" start="2025-03-06T14:47:16.203549" elapsed="0.000147"/>
 </kw>
 <kw name="Log Many" owner="BuiltIn">
-<msg time="2025-03-06T14:46:03.067455" level="INFO">Posso logar minha lista completa ['maça', 'banana', 'uva', 'abacaxi']</msg>
+<msg time="2025-03-06T14:47:16.203970" level="INFO">Posso logar minha lista completa ['maça', 'banana', 'uva', 'abacaxi']</msg>
 <arg>Posso logar minha lista completa @{FRUTAS}</arg>
 <doc>Logs the given messages as separate entries using the INFO level.</doc>
-<status status="PASS" start="2025-03-06T14:46:03.067323" elapsed="0.000177"/>
+<status status="PASS" start="2025-03-06T14:47:16.203821" elapsed="0.000198"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-03-06T14:46:03.068356" level="INFO">Posso logar somente itens da minha lista maça - banana</msg>
+<msg time="2025-03-06T14:47:16.205056" level="INFO">Posso logar somente itens da minha lista maça - banana</msg>
 <arg>Posso logar somente itens da minha lista ${FRUTAS[0]} - ${FRUTAS[1]}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-03-06T14:46:03.067602" elapsed="0.000809"/>
+<status status="PASS" start="2025-03-06T14:47:16.204137" elapsed="0.000976"/>
 </kw>
-<status status="PASS" start="2025-03-06T14:46:03.066828" elapsed="0.001663"/>
+<status status="PASS" start="2025-03-06T14:47:16.203306" elapsed="0.001911"/>
 </kw>
 <kw name="Usando screen shots">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-03-06T14:46:03.069124" level="INFO">Nos testes web, podemos logar Screenshot com a SeleniumLibrary</msg>
+<msg time="2025-03-06T14:47:16.205997" level="INFO">Nos testes web, podemos logar Screenshot com a SeleniumLibrary</msg>
 <arg>Nos testes web, podemos logar Screenshot com a SeleniumLibrary</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-03-06T14:46:03.068964" elapsed="0.000233"/>
+<status status="PASS" start="2025-03-06T14:47:16.205869" elapsed="0.000182"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-06T14:46:03.069604" level="INFO">Opening browser 'chrome' to base url 'http://www.robotizandotestes.blogspot.com.br'.</msg>
+<msg time="2025-03-06T14:47:16.206411" level="INFO">Opening browser 'chrome' to base url 'http://www.robotizandotestes.blogspot.com.br'.</msg>
 <arg>http://www.robotizandotestes.blogspot.com.br</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-06T14:46:03.069391" elapsed="5.229075"/>
+<status status="PASS" start="2025-03-06T14:47:16.206206" elapsed="4.984799"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-03-06T14:46:08.438538" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="nome_do_meuscreenshot.png"&gt;&lt;img src="nome_do_meuscreenshot.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-06T14:47:21.348447" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="nome_do_meuscreenshot.png"&gt;&lt;img src="nome_do_meuscreenshot.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>nome_do_meuscreenshot.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-03-06T14:46:08.299648" elapsed="0.139034"/>
+<status status="PASS" start="2025-03-06T14:47:21.191632" elapsed="0.156969"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-06T14:46:08.438912" elapsed="0.060901"/>
+<status status="PASS" start="2025-03-06T14:47:21.348849" elapsed="0.058353"/>
 </kw>
-<status status="PASS" start="2025-03-06T14:46:03.068674" elapsed="5.431421"/>
+<status status="PASS" start="2025-03-06T14:47:16.205535" elapsed="5.201917"/>
 </kw>
-<kw name="Usando outros tipos de logs">
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-03-06T14:46:08.501489" level="INFO">Minha mensagem de log exibida com sucesso!</msg>
-<arg>Minha mensagem de log exibida com sucesso!</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-03-06T14:46:08.501240" elapsed="0.000348"/>
-</kw>
-<status status="PASS" start="2025-03-06T14:46:08.500643" elapsed="0.001075"/>
-</kw>
-<status status="PASS" start="2025-03-06T14:46:03.063769" elapsed="5.438212"/>
+<status status="PASS" start="2025-03-06T14:47:16.199016" elapsed="5.208788"/>
 </test>
 <doc>Suíte de exmeplo didático para exemplificar o uso de LOGs nos testes
 Os LOGs são de grande utilidade, faça LOGs para analisar como seu teste está sendo executado nas entrelinhas
 Os LOGs te ajudam a achar falhas na automação dos seus testes
 Use LOGs sem moderação!!</doc>
-<status status="PASS" start="2025-03-06T14:46:02.934937" elapsed="5.567786"/>
+<status status="PASS" start="2025-03-06T14:47:16.055983" elapsed="5.352866"/>
 </suite>
 <statistics>
 <total>
