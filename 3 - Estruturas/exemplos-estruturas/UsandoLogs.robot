@@ -13,6 +13,7 @@ Caso de teste exemplo 01
     Usando LOG para mensagens
     Usando LOG Console
     Usando screen shots
+    Usando outros tipos de logs
 
 *** Keywords ***
 Usando LOG para mensagens
@@ -30,3 +31,6 @@ Usando screen shots
     Open Browser    http://www.robotizandotestes.blogspot.com.br    chrome
     Capture Page Screenshot      nome_do_meuscreenshot.png
     Close Browser
+
+Usando outros tipos de logs
+    Log    Minha mensagem de log exibida com sucesso!
