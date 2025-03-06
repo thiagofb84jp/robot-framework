@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.8.10 on linux)" generated="2025-03-04T11:55:19.895113" rpa="false" schemaversion="5">
+<suite id="s1" name="ExemploTarefaArgumentos" source="/home/thiagofb84jp/vscode/udemy/robot-framework/XX - Anexos/VariaveisEscoposArgumentos/ExemploTarefaArgumentos.robot">
+<test id="s1-t1" name="Imprimindo um e-mail customizado e aleatório" line="10">
+<kw name="Criar e-mail customizado e aleatório">
+<kw name="Generate Random String" owner="String">
+<msg time="2025-03-04T11:55:19.923910" level="INFO">${ALEATORIA} = 0IjBCw7z</msg>
+<var>${ALEATORIA}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-03-04T11:55:19.923719" elapsed="0.000223"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-03-04T11:55:19.924323" level="INFO">${EMAIL_FINAL} = MarcosFernandes0IjBCw7z@testerbot.como</msg>
+<var>${EMAIL_FINAL}</var>
+<arg>${NOME}${SOBRENOME}${ALEATORIA}@testerbot.como</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-03-04T11:55:19.924055" elapsed="0.000292"/>
+</kw>
+<return>
+<value>${EMAIL_FINAL}</value>
+<status status="PASS" start="2025-03-04T11:55:19.924400" elapsed="0.000033"/>
+</return>
+<msg time="2025-03-04T11:55:19.924566" level="INFO">${EMAIL_CRIADO} = MarcosFernandes0IjBCw7z@testerbot.como</msg>
+<var>${EMAIL_CRIADO}</var>
+<arg>${PESSOA.nome}</arg>
+<arg>${PESSOA.sobrenome}</arg>
+<status status="PASS" start="2025-03-04T11:55:19.922564" elapsed="0.002023"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${EMAIL_CRIADO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-04T11:55:19.924722" elapsed="0.000173"/>
+</kw>
+<status status="PASS" start="2025-03-04T11:55:19.921880" elapsed="0.003157"/>
+</test>
+<doc>Tarefa relacionada ao exemplo de uso de argumentos</doc>
+<status status="PASS" start="2025-03-04T11:55:19.895942" elapsed="0.029418"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ExemploTarefaArgumentos">ExemploTarefaArgumentos</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-03-04T11:55:19.893648" level="WARN">Error in file '/home/thiagofb84jp/vscode/udemy/robot-framework/XX - Anexos/VariaveisEscoposArgumentos/ExemploTarefaArgumentos.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
